@@ -73,6 +73,18 @@ for (int i = 0; i < 8; i++) {
     dIn.write(2);
   
     sc_start(1, SC_NS);
+  dIn.write(3);
+    
+    sc_start(1, SC_NS);
+  dIn.write(4);
+  
+    sc_start(1, SC_NS);
+    put.write(false);
+  get.write(true);
+  
+    sc_start(1, SC_NS);
+  
+  sc_start(1, SC_NS);
 
     // Close the trace file
     sc_close_vcd_trace_file(wf);
